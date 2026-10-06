@@ -1,0 +1,36 @@
+name: Bug report
+description: Something isn't working as expected
+labels: [fix]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: What did you do, what did you expect, and what happened instead?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. …
+        2. …
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Output of `stashy version`, or the Desktop app version
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, install method (Homebrew, Docker, binary), storage backend, database
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs
+      description: Relevant log output. Remove any secrets or API keys.
+      render: shell
