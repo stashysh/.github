@@ -21,7 +21,3 @@
 - **Agent-native**: built-in MCP server, plus REST and gRPC on one endpoint
 - **Any backend**: local disk, S3, R2, MinIO, or GCS
 - **Sharing on your terms**: private, team, or public, with clean URLs on your own domain
-
-```bash
-brew install stashysh/tap/stashy
-```
